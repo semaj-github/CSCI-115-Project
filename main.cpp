@@ -1,61 +1,46 @@
 #include <iostream>
 #include "Heap.h"
-#include <limits>
-#include <sstream>
+#include "Selection_Sort.h"
+#include "Merge_Sort.h"
+
 int main() {
 
-	Heap heap;
 
-	vector<int> vec;
 
-	int answer = 0;
-	cout << "Enter 0 for ascending and 1 for descending order" << endl;
-	cin >> answer;
-	cin.clear();  
-	cin.ignore(numeric_limits<streamsize>::max(), '\n'); 		
+/**
+    Insertion
+    Selection - complete 
+    Bubble 
+    Merge sort - complete
+    Quicksort
+    Heapsort - complete 
+    Counting Sort
+    Radix Sort
+**/
 
-	cout << "Input arrary: ";
-	int read = -1;
-	while(1) {
-		cin >> read;
-		if(!cin) break;
-		vec.push_back(read);
-	}
+
+	vector<int> test = {5, 4, 9, 2, 22, 3, 44, 33, 0, 10, 21};
 	
-	if (answer == 0) heap.buildMaxHeap(vec);
-	else heap.buildMinHeap(vec);
-	cin.clear();  
-	cin.ignore(numeric_limits<streamsize>::max(), '\n'); 		
+	vector<int> test2 = test;
+	vector<int> test3 = test2;
 
-	cout << "Input element: ";
-	int element;
-	cin >> element;
-	if(answer == 0) heap.insert_value_maxHeap(vec, element);
-	else heap.insert_value_minHeap(vec, element);
+	Selection_Sort selection_sort;
+	selection_sort.sort(test);
 
-	cout << "sorted heap: ";
-	if(answer == 0) heap.ascendingHeapSort(vec);
-	else heap.descendingHeapSort(vec);
-	heap.print(vec);
+	for(int x : test) cout << x << ", ";
+	cout << endl;
 
 
-	if(answer == 0) {
-		cout << "On calling extract_maximum: ";
-		int extract = heap.extract_maximum(vec);
-		cout << extract << endl;
-		cout << "Sorted heap is" << endl;
-		heap.ascendingHeapSort(vec);
-		heap.print(vec);
-	} else {
+	Merge_Sort merge_sort;
+	merge_sort.sort(test2, 0, test2.size()-1);
 
-		cout << "On calling extract_minimum: ";
-		int extract = heap.extract_minimum(vec);
-		cout << extract << endl;
-		cout << "Sorted heap is" << endl;
-		heap.descendingHeapSort(vec);
-		heap.print(vec);
-	}
+	for(int x : test2) cout << x << ", ";
+	cout << endl;
 
+	Heap heap;
+	heap.buildMaxHeap(test3);
+	heap.ascendingHeapSort(test3);
 
+	for(int x : test3) cout << x << ", ";
 
 }
