@@ -1,5 +1,5 @@
-a.out: main.o Heap.o Selection_Sort.o Merge_Sort.o Counting_Sort.o Radix_Sort.o Insertion_Sort.o
-	g++ main.o Heap.o Selection_Sort.o Merge_Sort.o Counting_Sort.o Radix_Sort.o Insertion_Sort.o
+a.out: main.o Heap.o Selection_Sort.o Merge_Sort.o Counting_Sort.o Radix_Sort.o Insertion_Sort.o Bubble_Sort.o
+	g++ main.o Heap.o Selection_Sort.o Merge_Sort.o Counting_Sort.o Radix_Sort.o Insertion_Sort.o Bubble_Sort.o
 
 main.o: main.cpp Heap.h Selection_Sort.h
 	g++ -c main.cpp
@@ -21,6 +21,9 @@ Radix_Sort.o: Radix_Sort.cpp Radix_Sort.h
 
 Insertion_Sort.o: Insertion_Sort.cpp Insertion_Sort.h
 	g++ -c Insertion_Sort.cpp
+
+Bubble_Sort.o: Bubble_Sort.cpp Bubble_Sort.h
+	g++ -c Bubble_Sort.cpp
 
 clean:
 	rm -rf a.out core *.o
