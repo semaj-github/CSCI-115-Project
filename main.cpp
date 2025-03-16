@@ -6,7 +6,9 @@
 #include "Radix_Sort.h"
 #include "Insertion_Sort.h"
 #include "Bubble_Sort.h"
-
+#include "Array_Maker.h"
+#include "Quick_Sort.h"
+#include <ctime>
 int main() {
 
 /**
@@ -20,7 +22,7 @@ int main() {
     Radix Sort - complete
 **/
 
-
+/**
 	vector<int> test = {99, 5, 4, 9, 2, 22, 3, 44, 33, 0, 10, 21, 1};
 	
 	vector<int> test2 = test;
@@ -69,5 +71,14 @@ int main() {
 	bubble_sort.sort(test7);
 	for(int x : test7) cout << x << ", ";
 	cout << endl;
-
+**/
+	vector<int> vec;
+	Array_Maker array_maker;
+	array_maker.randArray(vec, 10);
+	for(int x : vec) cout << x << ", ";
+	srand(time(0));
+	Quick_Sort quick_sort;
+	quick_sort.sort(vec, 0, vec.size()-1);
+	cout << endl;
+	for(int x : vec) cout << x << ", "; 
 }
