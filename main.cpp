@@ -9,18 +9,9 @@
 #include "Array_Maker.h"
 #include "Quick_Sort.h"
 #include <ctime>
+
 int main() {
 
-/**
-    Insertion - complete 
-    Selection - complete 
-    Bubble - complete 
-    Merge sort - complete
-    Quicksort
-    Heapsort - complete 
-    Counting Sort - complete
-    Radix Sort - complete
-**/
 
 /**
 	vector<int> test = {99, 5, 4, 9, 2, 22, 3, 44, 33, 0, 10, 21, 1};
@@ -74,11 +65,16 @@ int main() {
 **/
 	vector<int> vec;
 	Array_Maker array_maker;
-	array_maker.randArray(vec, 10);
-	for(int x : vec) cout << x << ", ";
+	// 100M : 35sec
+	// 100Trillion :
+	long long  x = 1'000'000'000;
+	
+	array_maker.randArray(vec, x);
+	//for(int x : vec) cout << x << ", ";
 	srand(time(0));
 	Quick_Sort quick_sort;
-	quick_sort.sort(vec, 0, vec.size()-1);
-	cout << endl;
-	for(int x : vec) cout << x << ", "; 
-}
+	quick_sort.sort(vec, 0, vec.size()-1, "low");
+	//cout << endl;
+	//for(int x : vec) cout << x << ", "; 
+	
+	}

@@ -9,8 +9,8 @@ struct Quick_Sort {
 	Quick_Sort();
 	~Quick_Sort();
 
-	void sort(vector<int> &vec, int l, int r, string op ="none");
+	void sort(vector<int> &vec, long long l, long long r, string op ="none");
 
-	int Partition(vector<int> &vec, int l, int r, string op="none");
+	long long Partition(vector<int> &vec, long long l, long long r, string op="none");
 };
 

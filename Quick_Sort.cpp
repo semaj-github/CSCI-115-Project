@@ -9,11 +9,11 @@ using namespace std;
 	Quick_Sort::Quick_Sort() {}
 	Quick_Sort::~Quick_Sort() {}
 
-	void Quick_Sort::sort(vector<int> &vec, int l, int r, string op) {
+	void Quick_Sort::sort(vector<int> &vec, long long l, long long r, string op) {
 
 		if(l < r) {
 
-			int q = Partition(vec, l, r, op);
+			long long q = Partition(vec, l, r, op);
 			sort(vec, l, q, op);
 			sort(vec, q + 1, r, op);
 
@@ -21,9 +21,9 @@ using namespace std;
 
 	}
 
-	int Quick_Sort::Partition(vector<int> &vec, int l, int r, string op) {
+	long long Quick_Sort::Partition(vector<int> &vec, long long l, long long r, string op) {
 
-		int pivot = -1;
+		long long pivot = -1;
 
 
 		if(op == "low") {
@@ -32,9 +32,9 @@ using namespace std;
 
 		} else if(op == "median") { 
 
-			int begin = vec.at(l);
-			int end = vec.at(r);
-			int mid = vec.at((l+r)/2);
+			long long begin = vec.at(l);
+			long long end = vec.at(r);
+			long long mid = vec.at((l+r)/2);
 			//cout << "choosen median" << endl;
 			if ( (begin <= mid && mid <= end) || (mid >= end && mid <= begin) ) pivot = vec.at((l+r)/2);
 			else if (mid <= begin && begin <= end || (mid >= end  && begin >= end) ) pivot = vec.at(l);
@@ -47,7 +47,7 @@ using namespace std;
 		}   else {
 
 			//cout << "choosen random" << endl;
-			int pivot_number = rand() % (r-l+1) + l;
+			long long pivot_number = rand() % (r-l+1) + l;
 			//cout << "pivot number = " << pivot_number << endl;
 			//cout << "l = " << l << endl;
 			//cout << "r = " << r << endl;
@@ -55,8 +55,8 @@ using namespace std;
 		} 
 
 
-		int i = l-1;
-		int j = r+1;
+		long long i = l-1;
+		long long j = r+1;
 
 		while(1) {
 
@@ -71,7 +71,7 @@ using namespace std;
 
 			if(i < j) {
 
-				int temp = vec.at(i);
+				long long temp = vec.at(i);
 				vec.at(i) = vec.at(j);
 				vec.at(j) = temp;
 
