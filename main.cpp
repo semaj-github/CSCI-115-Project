@@ -63,17 +63,20 @@ int main() {
 	for(int x : test7) cout << x << ", ";
 	cout << endl;
 **/
-	vector<int> vec;
+	long long  size_of_data = 25'000'000;
+	vector<int> vec(size_of_data, 0);
+
 	Array_Maker array_maker;
-	// 100M : 35sec
-	// 100Trillion :
-	long long  x = 1'000'000'000;
+	array_maker.randArray(vec, size_of_data);
 	
-	array_maker.randArray(vec, x);
+	// 100M : 35sec quick sort
+	Bubble_Sort bubble_sort;
+	bubble_sort.sort(vec);
+
 	//for(int x : vec) cout << x << ", ";
 	srand(time(0));
-	Quick_Sort quick_sort;
-	quick_sort.sort(vec, 0, vec.size()-1, "low");
+	//Quick_Sort quick_sort;
+	//quick_sort.sort(vec, 0, vec.size()-1, "low");
 	//cout << endl;
 	//for(int x : vec) cout << x << ", "; 
 	
