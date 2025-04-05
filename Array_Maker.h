@@ -10,7 +10,7 @@ class Array_Maker {
 		Array_Maker();
 		~Array_Maker();
 
-		void randArray(vector<int>& arr, long long n);
+		void randArray(vector<int>& arr, const long long n, const int range);
 
 		void halfsortedArray(vector<int>& arr, long long n); 
 

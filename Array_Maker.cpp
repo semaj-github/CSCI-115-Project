@@ -1,16 +1,17 @@
 #include <iostream>
 #include <vector>
 #include "Array_Maker.h"
-
+#include <ctime>
 using namespace std; 
 
 
 Array_Maker::Array_Maker() {}
 Array_Maker::~Array_Maker() {}
 
-void Array_Maker::randArray(vector<int>& arr, long long n) 
+void Array_Maker::randArray(vector<int>& arr, const long long n, const int range) 
 {
-	for (long long i = 0; i < n; i++) arr.at(i) = rand() % 1000;
+	srand(time(0));
+	for (long long i = 0; i < n; i++) arr.at(i) = rand() % range;
 
 }
 
