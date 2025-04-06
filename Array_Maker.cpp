@@ -11,7 +11,7 @@ Array_Maker::~Array_Maker() {}
 void Array_Maker::randArray(vector<int>& arr, const long long n, const int range) 
 {
 	srand(time(0));
-	for (long long i = 0; i < n; i++) arr.at(i) = rand() % range;
+	for (long long i = 0; i < n; i++) arr.at(i) = rand() % (range + 1);
 
 }
 
