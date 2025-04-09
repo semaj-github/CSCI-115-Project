@@ -15,20 +15,26 @@ int main() {
 	const long long  size_of_data = 1'000'000;
 	const int range = 1'000;
 	vector<int> vec(size_of_data, 0);
-	int start = clock();
-	int end = clock();
+	auto start = clock();
+	auto end = clock();
 
 	cout << endl;	
 	cout << "Vector size: " << size_of_data << endl;
 	cout << "Range: " << range << endl;
-	cout << "randomized elements in range" << endl;
+	cout << "random" << endl;
 	cout << endl;
 
 
 	Array_Maker array_maker;
+	//array_maker.reverseArray(vec, size_of_data);	
+	//array_maker.sortedArray(vec, size_of_data, range);
+	//array_maker.halfsortedArray(vec, size_of_data, range);
 	array_maker.randArray(vec, size_of_data, range);
 	const vector<int> original_vec = vec;
 
+	//for(int x : vec) cout << x << endl;
+	
+	
 	for(int i = 0; i < 3; i++) {
 
 	cout << endl;
@@ -42,7 +48,8 @@ int main() {
 	bubble_sort.sort(vec);
 	end = clock();
 	cout << endl;
-	cout << "Bubble Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	double duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Bubble Sort: " << duration << endl; // 60sec * 60minutes * 24hours
 
 	// Merge Sort
 	vec = original_vec;
@@ -51,7 +58,8 @@ int main() {
 	merge_sort.sort(vec, 0, vec.size()-1);
 	end = clock();
 	cout << endl;
-	cout << "Merge Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Merge Sort: " << duration << endl;
 
 	
 	// Quick Sort
@@ -60,7 +68,8 @@ int main() {
 	quick_sort.sort(vec, 0, vec.size()-1, "median");
 	end = clock();
 	cout << endl;
-	cout << "Quick_Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Quick_Sort: " << duration << endl;
 
 	//Insertion Sort
 	vec = original_vec;
@@ -69,7 +78,8 @@ int main() {
 	insertion_sort.sort(vec);
 	end = clock();
 	cout << endl;
-	cout << "Insertion Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Insertion Sort: " << duration << endl;
 
 	// Selection sort
 	vec = original_vec;
@@ -78,7 +88,8 @@ int main() {
 	selection_sort.sort(vec);
 	end = clock();
 	cout << endl;
-	cout << "Selection Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Selection Sort: " << duration << endl;
 	
 	
 	//counting sort
@@ -87,7 +98,8 @@ int main() {
 	counting_sort.sort(vec);	
 	end = clock();
 	cout << endl;
-	cout << "Counting Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Counting Sort: " << duration  << endl;
 
 		
 	// Radix Sort
@@ -97,7 +109,8 @@ int main() {
 	radix_sort.sort(vec);
 	end = clock();
 	cout << endl;
-	cout << "Radix Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Radix Sort: " << duration << endl;
 
 	
 	// Heap Sort
@@ -108,9 +121,12 @@ int main() {
 	heap.ascendingHeapSort(vec);
 	end = clock();
 	cout << endl;
-	cout << "Heap Sort: " << double(end-start)/CLOCKS_PER_SEC << endl;
+	duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
+	cout << "Heap Sort: " << duration << endl;
 
 	}
 
-	
+
+cout << "===========================================" << endl;	
 	}
+

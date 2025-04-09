@@ -1,0 +1,67 @@
+
+Vector size: 1000000
+Range: 1000
+Sorted
+
+
+Test # : 1
+
+Vector size: 1000000
+Range: 1000
+Sorted
+
+
+Test # : 1
+
+Bubble Sort: 6662.6
+
+Merge Sort: 179.751
+
+Quick_Sort: 0.120417
+
+Insertion Sort: 0.007501
+
+Selection Sort: 3809.86
+
+Counting Sort: 0.044854
+
+Radix Sort: 0.295896
+
+Heap Sort: 0.676844
+
+Test # : 2
+
+Bubble Sort: 6666.51
+
+Merge Sort: 179.573
+
+Quick_Sort: 0.121036
+
+Insertion Sort: 0.007345
+
+Selection Sort: 3847.49
+
+Counting Sort: 0.043591
+
+Radix Sort: 0.294126
+
+Heap Sort: 0.67304
+
+Test # : 3
+
+Bubble Sort: 6654.76
+
+Merge Sort: 179.562
+
+Quick_Sort: 0.119412
+
+Insertion Sort: 0.010179
+
+Selection Sort: 3807.17
+
+Counting Sort: 0.046441
+
+Radix Sort: 0.295675
+
+Heap Sort: 0.676173
+===========================================
