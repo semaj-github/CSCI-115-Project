@@ -14,7 +14,7 @@ int main() {
 
 	const vector<long long>  size_of_data = {100, 1'000, 10'000, 100'000, 250'000, 1'000'000}; // data sizes
 	const int range = 1'000; // range 
-	const string vec_sort_type = "reverse"; // sorted type 
+	const string vec_sort_type = "random"; // sorted type 
 	auto start = clock(); // initializing start clock to reuse 
 	auto end = clock(); // initializing end clock to reuse
 
@@ -26,31 +26,31 @@ int main() {
 
 		cout << endl;	
 		cout << "Vector size: " << size_of_data.at(j) << endl;
-		cout << "Range: " << range << endl;
 		cout << "sorted type: ";
 
 		// chosen sorted type
 		if(vec_sort_type == "random") {
-			array_maker.randArray(vec, size_of_data.at(j), range);
-			cout << "random";
+			array_maker.randArray(vec, range);
+			cout << "random" << endl;
+			cout << "range: " << range << endl;
 		}
 		else if(vec_sort_type == "reverse") {
-			array_maker.reverseArray(vec, size_of_data.at(j));	
-			cout << "reverse";
+			array_maker.reverseArray(vec);	
+			cout << "reverse" << endl;
 		}
 		else if(vec_sort_type == "sorted") {
-			array_maker.sortedArray(vec, size_of_data.at(j), range);
-			cout << "sorted";
+			array_maker.sortedArray(vec);
+			cout << "sorted" << endl;
 		}
 		else if(vec_sort_type == "half sorted") {
-			array_maker.halfsortedArray(vec, size_of_data.at(j), range);
-			cout << "half sorted";
+			array_maker.halfsortedArray(vec);
+			cout << "half sorted" << endl;
 		} 
 		else {
 			cout << "not a valid choice for sorted type" << endl;
 			break;
 		}
-		cout << endl;
+		
 
 		const vector<int> original_vec = vec; // saving original vec to be tested for other sorting algorithms for fair testing
 
@@ -149,5 +149,6 @@ int main() {
 		cout << "===========================================" << endl;	
 
 	}
+
 }
 

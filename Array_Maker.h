@@ -10,12 +10,12 @@ class Array_Maker {
 		Array_Maker();
 		~Array_Maker();
 
-		void randArray(vector<int>& arr, const long long n, const int range);
+		void randArray(vector<int>& arr, const int range);
 
-		void halfsortedArray(vector<int>& arr, long long n, const int range); 
-		void sortedArray(vector<int>& arr, long long n,  const int range);
+		void halfsortedArray(vector<int>& arr); 
+		void sortedArray(vector<int>& arr);
 
-		void reverseArray(vector<int>& arr, long long n);
+		void reverseArray(vector<int>& arr);
 
 };
 
