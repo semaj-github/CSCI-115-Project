@@ -59,7 +59,6 @@ int main() {
 			cout << endl;
 			cout << "Test # : " << i + 1 << endl;
 
-
 			// Bubble Sort
 			vec = original_vec;
 			Bubble_Sort bubble_sort;
@@ -82,6 +81,7 @@ int main() {
 
 
 			// Quick Sort
+			vec = original_vec;
 			Quick_Sort quick_sort;
 			start = clock();
 			quick_sort.sort(vec, 0, vec.size()-1, "median");
@@ -112,6 +112,7 @@ int main() {
 
 
 			//counting sort
+			vec = original_vec;
 			Counting_Sort counting_sort;
 			start = clock();
 			counting_sort.sort(vec);	

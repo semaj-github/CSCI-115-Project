@@ -406,3 +406,28 @@ Bubble Sort: 108.493
 Merge Sort: 1.31142
 
 Quick_Sort: 0.015605
+
+Insertion Sort: 50.6707
+
+Selection Sort: 34.7192
+
+Counting Sort: 0.002744
+
+Radix Sort: 0.020003
+
+Heap Sort: 0.055821
+===========================================
+
+Vector size: 250000
+sorted type: random
+range: 1000
+
+Test # : 1
+
+Bubble Sort: 702.447
+
+Merge Sort: 15.3879
+
+Quick_Sort: 0.042471
+
+Insertion Sort: 319.771
