@@ -14,11 +14,18 @@ int main() {
 
 	const vector<long long>  size_of_data = {100, 1'000, 10'000, 100'000, 250'000, 1'000'000}; // data sizes
 	const int range = 1'000; // range 
-	const string vec_sort_type = "random"; // sorted type 
+	const string vec_sort_type = "reverse"; // sorted type 
 	auto start = clock(); // initializing start clock to reuse 
 	auto end = clock(); // initializing end clock to reuse
 
+	vector<int> vec(10, 0);
+	Array_Maker array_maker; // initializing the array maker to create the range and size with passed in paramters
+	array_maker.halfsortedArray(vec, 10, range);
 
+	for(int x : vec) cout << x << " ";
+	
+
+	/**
 	for (int j = 0; j < size_of_data.size(); j++) {
 
 		vector<int> vec(size_of_data.at(j), 0); // initializing vec size with elements equal to zero
@@ -32,21 +39,25 @@ int main() {
 		// chosen sorted type
 		if(vec_sort_type == "random") {
 			array_maker.randArray(vec, size_of_data.at(j), range);
-			cout << "random"
+			cout << "random";
 		}
 		else if(vec_sort_type == "reverse") {
 			array_maker.reverseArray(vec, size_of_data.at(j));	
+			cout << "reverse";
 		}
 		else if(vec_sort_type == "sorted") {
 			array_maker.sortedArray(vec, size_of_data.at(j), range);
+			cout << "sorted";
 		}
 		else if(vec_sort_type == "half sorted") {
 			array_maker.halfsortedArray(vec, size_of_data.at(j), range);
+			cout << "half sorted";
 		} 
 		else {
 			cout << "not a valid choice for sorted type" << endl;
 			break;
 		}
+		cout << endl;
 
 		const vector<int> original_vec = vec; // saving original vec to be tested for other sorting algorithms for fair testing
 
@@ -64,7 +75,7 @@ int main() {
 			end = clock();
 			cout << endl;
 			double duration = static_cast<double>(end-start) / CLOCKS_PER_SEC;
-			cout << "Bubble Sort: " << duration << endl; // 60sec * 60minutes * 24hours
+			cout << "Bubble Sort: " << duration << endl; 
 
 			// Merge Sort
 			vec = original_vec;
@@ -145,5 +156,6 @@ int main() {
 		cout << "===========================================" << endl;	
 
 	}
+**/
 }
 
