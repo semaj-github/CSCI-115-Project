@@ -18,14 +18,7 @@ int main() {
 	auto start = clock(); // initializing start clock to reuse 
 	auto end = clock(); // initializing end clock to reuse
 
-	vector<int> vec(10, 0);
-	Array_Maker array_maker; // initializing the array maker to create the range and size with passed in paramters
-	array_maker.halfsortedArray(vec, 10, range);
-
-	for(int x : vec) cout << x << " ";
-	
-
-	/**
+		
 	for (int j = 0; j < size_of_data.size(); j++) {
 
 		vector<int> vec(size_of_data.at(j), 0); // initializing vec size with elements equal to zero
@@ -156,6 +149,5 @@ int main() {
 		cout << "===========================================" << endl;	
 
 	}
-**/
 }
 
