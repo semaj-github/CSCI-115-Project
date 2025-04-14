@@ -14,7 +14,7 @@ int main() {
 
 	const vector<long long>  size_of_data = {100, 1'000, 10'000, 100'000, 250'000, 1'000'000}; // data sizes
 	const int range = 1'000; // range 
-	const string vec_sort_type = "random"; // sorted type 
+	const string vec_sort_type = "half sorted"; // sorted type 
 	auto start = clock(); // initializing start clock to reuse 
 	auto end = clock(); // initializing end clock to reuse
 
