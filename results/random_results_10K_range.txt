@@ -1,0 +1,354 @@
+
+Vector size: 100
+sorted type: random
+range: 10000
+
+Test # : 1
+
+Bubble Sort: 0.000115
+
+Merge Sort: 4.6e-05
+
+Quick_Sort: 1.6e-05
+
+Insertion Sort: 4.9e-05
+
+Selection Sort: 4.2e-05
+
+Counting Sort: 0.000115
+
+Radix Sort: 2.6e-05
+
+Heap Sort: 2.1e-05
+
+Test # : 2
+
+Bubble Sort: 0.000109
+
+Merge Sort: 4.4e-05
+
+Quick_Sort: 2.4e-05
+
+Insertion Sort: 5.2e-05
+
+Selection Sort: 4.3e-05
+
+Counting Sort: 0.000121
+
+Radix Sort: 2.3e-05
+
+Heap Sort: 2.1e-05
+
+Test # : 3
+
+Bubble Sort: 0.000108
+
+Merge Sort: 4.5e-05
+
+Quick_Sort: 1.2e-05
+
+Insertion Sort: 5e-05
+
+Selection Sort: 4.1e-05
+
+Counting Sort: 0.000112
+
+Radix Sort: 2.2e-05
+
+Heap Sort: 2e-05
+===========================================
+
+Vector size: 1000
+sorted type: random
+range: 10000
+
+Test # : 1
+
+Bubble Sort: 0.011045
+
+Merge Sort: 0.000611
+
+Quick_Sort: 0.000165
+
+Insertion Sort: 0.004849
+
+Selection Sort: 0.003629
+
+Counting Sort: 0.000177
+
+Radix Sort: 0.000203
+
+Heap Sort: 0.000308
+
+Test # : 2
+
+Bubble Sort: 0.011076
+
+Merge Sort: 0.000604
+
+Quick_Sort: 0.000165
+
+Insertion Sort: 0.005029
+
+Selection Sort: 0.003686
+
+Counting Sort: 0.000167
+
+Radix Sort: 0.000211
+
+Heap Sort: 0.000307
+
+Test # : 3
+
+Bubble Sort: 0.01113
+
+Merge Sort: 0.000588
+
+Quick_Sort: 0.000162
+
+Insertion Sort: 0.004943
+
+Selection Sort: 0.003676
+
+Counting Sort: 0.000151
+
+Radix Sort: 0.000193
+
+Heap Sort: 0.000317
+===========================================
+
+Vector size: 10000
+sorted type: random
+range: 10000
+
+Test # : 1
+
+Bubble Sort: 1.11326
+
+Merge Sort: 0.018263
+
+Quick_Sort: 0.002023
+
+Insertion Sort: 0.49163
+
+Selection Sort: 0.370488
+
+Counting Sort: 0.000369
+
+Radix Sort: 0.001894
+
+Heap Sort: 0.004139
+
+Test # : 2
+
+Bubble Sort: 1.11272
+
+Merge Sort: 0.01877
+
+Quick_Sort: 0.002034
+
+Insertion Sort: 0.488053
+
+Selection Sort: 0.363516
+
+Counting Sort: 0.000378
+
+Radix Sort: 0.0019
+
+Heap Sort: 0.004223
+
+Test # : 3
+
+Bubble Sort: 1.1136
+
+Merge Sort: 0.018577
+
+Quick_Sort: 0.002035
+
+Insertion Sort: 0.488864
+
+Selection Sort: 0.361284
+
+Counting Sort: 0.000362
+
+Radix Sort: 0.001996
+
+Heap Sort: 0.004215
+===========================================
+
+Vector size: 100000
+sorted type: random
+range: 10000
+
+Test # : 1
+
+Bubble Sort: 110.59
+
+Merge Sort: 1.30494
+
+Quick_Sort: 0.023244
+
+Insertion Sort: 49.7769
+
+Selection Sort: 37.3188
+
+Counting Sort: 0.002578
+
+Radix Sort: 0.023731
+
+Heap Sort: 0.053212
+
+Test # : 2
+
+Bubble Sort: 110.49
+
+Merge Sort: 1.30539
+
+Quick_Sort: 0.023476
+
+Insertion Sort: 49.6878
+
+Selection Sort: 37.3675
+
+Counting Sort: 0.002646
+
+Radix Sort: 0.024135
+
+Heap Sort: 0.054134
+
+Test # : 3
+
+Bubble Sort: 110.512
+
+Merge Sort: 1.30587
+
+Quick_Sort: 0.023128
+
+Insertion Sort: 49.7436
+
+Selection Sort: 37.2372
+
+Counting Sort: 0.002632
+
+Radix Sort: 0.023663
+
+Heap Sort: 0.054852
+===========================================
+
+Vector size: 250000
+sorted type: random
+range: 10000
+
+Test # : 1
+
+Bubble Sort: 686.394
+
+Merge Sort: 14.5312
+
+Quick_Sort: 0.06113
+
+Insertion Sort: 310.427
+
+Selection Sort: 235.007
+
+Counting Sort: 0.006327
+
+Radix Sort: 0.062801
+
+Heap Sort: 0.145273
+
+Test # : 2
+
+Bubble Sort: 686.727
+
+Merge Sort: 14.548
+
+Quick_Sort: 0.060857
+
+Insertion Sort: 310.76
+
+Selection Sort: 234.685
+
+Counting Sort: 0.006319
+
+Radix Sort: 0.059746
+
+Heap Sort: 0.146835
+
+Test # : 3
+
+Bubble Sort: 686.731
+
+Merge Sort: 14.5472
+
+Quick_Sort: 0.061164
+
+Insertion Sort: 310.69
+
+Selection Sort: 235.277
+
+Counting Sort: 0.006257
+
+Radix Sort: 0.059966
+
+Heap Sort: 0.15019
+===========================================
+
+Vector size: 1000000
+sorted type: random
+range: 10000
+
+Test # : 1
+
+Bubble Sort: 10932.1
+
+Merge Sort: 181.097
+
+Quick_Sort: 0.261431
+
+Insertion Sort: 5120.64
+
+Selection Sort: 3784.87
+
+Counting Sort: 0.025096
+
+Radix Sort: 0.238261
+
+Heap Sort: 0.652332
+
+Test # : 2
+
+Bubble Sort: 11048.7
+
+Merge Sort: 179.74
+
+Quick_Sort: 0.260992
+
+Insertion Sort: 5025.04
+
+Selection Sort: 3790.24
+
+Counting Sort: 0.025604
+
+Radix Sort: 0.237816
+
+Heap Sort: 0.666993
+
+Test # : 3
+
+Bubble Sort: 11007.7
+
+Merge Sort: 179.71
+
+Quick_Sort: 0.26175
+
+Insertion Sort: 5116.4
+
+Selection Sort: 3778.59
+
+Counting Sort: 0.026573
+
+Radix Sort: 0.240066
+
+Heap Sort: 0.666025
+===========================================
