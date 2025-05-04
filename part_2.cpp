@@ -148,8 +148,8 @@ int main() {
 
 	//sum(array);
 
-	vector<int> test = {10, 3, 5, 12, 20, 9, 8, 7, 29, 10, 6};
-	vector<pair<int,int>> result = efficient_TwoSum(test, 15);
+	vector<int> test = {10, 3, 5, 12, 20, 9, 8, 7, 29, 10, 6}; // insert the list of integers
+	vector<pair<int,int>> result = efficient_TwoSum(test, 15); // replace 2nd parameter for target
 
 	for(auto p : result) cout << p.first << " " << p.second << endl;
 
